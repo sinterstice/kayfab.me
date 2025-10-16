@@ -1,0 +1,10 @@
+{
+  "content": "\u003cp\u003eThis is some homepage content.\u003c/p\u003e\n\u003cp\u003eIt has \u0026ldquo;quotes\u0026rdquo;, which will make JSON output tricky.\u003c/p\u003e\n",
+  "date": "0001-01-01T00:00:00Z",
+  "description": "",
+  "draft": false,
+  "lastModified": "0001-01-01T00:00:00Z",
+  "path": "/",
+  "title": "kayfab.me",
+  "weight": 0
+}

@@ -1,0 +1,10 @@
+{{ dict 
+    "title" .Page.Title
+    "content" .Page.Content 
+    "date" .Page.Date
+    "lastModified" .Page.Lastmod
+    "description" .Page.Description
+    "draft" .Page.Draft
+    "path" .Page.Path
+    "weight" .Page.Weight
+| jsonify (dict "indent" "  ") }}
