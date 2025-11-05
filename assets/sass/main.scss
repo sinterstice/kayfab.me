@@ -1,0 +1,9 @@
+@use './citation';
+
+.index-content, .index-content p:first-child {
+    margin-top: 0;
+}
+
+.post-date.end-date::before {
+    content: '—';
+}

@@ -13,7 +13,13 @@
 
 {{ template "_internal/google_analytics.html" . }}
 
-{{ $css := resources.Match "css/*.css" | resources.Concat "style.css" | resources.Minify }}
+{{ $terminal_css := resources.Match "css/*.css" }}
+{{ $sass := resources.Get "sass/main.scss" | toCSS (dict
+    "enableSourceMap" hugo.IsDevelopment
+    "outputStyle" (cond hugo.IsDevelopment "expanded" "compressed")
+    "transpiler" "dartsass"
+) }}
+{{ $css := $terminal_css | append $sass | resources.Concat "style.css" | resources.Minify }}
 <link rel="stylesheet" href="{{ $css.Permalink }}">
 <!-- Custom Terminal.css styles -->
 {{ if (fileExists "static/terminal.css") -}}

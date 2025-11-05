@@ -1,0 +1,144 @@
+$color-text: #F0F0F0;
+$color-link: #AF7FFD;
+$color-link-alt: #CEA6FD;
+$color-term: #8B00FF;
+$color-text-bg: rgba(0,0,0,0.3);
+
+$u-small: 8px;
+$u-medium: 12px;
+$u-large: 16px;
+$u-xlarge: 24px;
+$u-xxlarge: 32px;
+
+.post-content {
+    position: relative;
+}
+
+.cite-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: rgb(0,0,0);
+    padding: $u-large $u-xlarge;
+    max-width: calc(100% + 48px);
+
+    &:before, &:after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: block;
+        content: '';
+        border: 12px solid $color-link;
+        height: $u-xxlarge;
+    }
+
+    &:before {
+        top: 0;
+        border-width: $u-medium $u-medium 0;
+        margin-top: -$u-medium;
+    }
+
+    &:after {
+        bottom: 0;
+        border-width: 0 $u-medium $u-medium;
+        margin-bottom: -$u-medium;
+    }
+
+    &:not(.hide) {
+        animation: .5s ease-out 1 cite-box;
+
+        .cite-box--inner {
+            animation: .5s ease-out 1 cite-box-inner;
+        }
+
+        .cite-box--close {
+            animation: .5s ease-out 1 cite-box-inner;
+        }
+
+        &:before {
+            animation: .5s ease-in-out 1 cite-bracket-top;
+        }
+
+        &:after {
+            animation: .5s ease-in-out 1 cite-bracket-bottom;
+        }
+    }
+
+    &.hide {
+        display: none;
+    }
+}
+
+@keyframes cite-box {
+    0%, 50% {
+        background: rgba(0,0,0,0);
+    }
+
+    100% {
+        background: rgba(0,0,0,1);
+    }
+}
+
+@keyframes cite-box-inner {
+    0%, 50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes cite-bracket-top {
+    0% {
+        top: 50%;
+        left: calc(50% - 12px);
+        right: calc(50% - 12px);
+        width: 24px;
+    }
+
+    50% {
+        top: 50%;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes cite-bracket-bottom {
+    0% {
+        bottom: 50%;
+        left: calc(50% - 12px);
+        right: calc(50% - 12px);
+        width: 24px;
+    }
+
+    50% {
+        bottom: 50%;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+.cite-box--close {
+    appearance: none;
+    --webkit-appearance: none;
+    background: $color-link;
+    border: none;
+    color: white;
+    width: $u-xxlarge * 4;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}

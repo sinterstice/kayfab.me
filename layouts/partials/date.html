@@ -1,0 +1,11 @@
+{{- $date := .date -}}
+{{- with .context.Params.dateFormat -}}
+  {{- $date | time.Format . -}}
+{{- else with (index .context.Site.Params "dateFormat" .context.Type) -}}
+    {{- $date | time.Format . -}}
+{{- else with .context.Site.Params.dateFormat.default -}}
+    {{- $date | time.Format . -}}
+{{- else -}}
+    {{- $date | time.Format "2006-01-02" -}}
+{{- end -}}
+

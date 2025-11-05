@@ -1,0 +1,122 @@
+.post-content {
+  position: relative;
+}
+
+.cite-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: rgb(0, 0, 0);
+  padding: 16px 24px;
+  max-width: calc(100% + 48px);
+}
+.cite-box:before, .cite-box:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  content: "";
+  border: 12px solid #AF7FFD;
+  height: 32px;
+}
+.cite-box:before {
+  top: 0;
+  border-width: 12px 12px 0;
+  margin-top: -12px;
+}
+.cite-box:after {
+  bottom: 0;
+  border-width: 0 12px 12px;
+  margin-bottom: -12px;
+}
+.cite-box:not(.hide) {
+  animation: 0.5s ease-out 1 cite-box;
+}
+.cite-box:not(.hide) .cite-box--inner {
+  animation: 0.5s ease-out 1 cite-box-inner;
+}
+.cite-box:not(.hide) .cite-box--close {
+  animation: 0.5s ease-out 1 cite-box-inner;
+}
+.cite-box:not(.hide):before {
+  animation: 0.5s ease-in-out 1 cite-bracket-top;
+}
+.cite-box:not(.hide):after {
+  animation: 0.5s ease-in-out 1 cite-bracket-bottom;
+}
+.cite-box.hide {
+  display: none;
+}
+
+@keyframes cite-box {
+  0%, 50% {
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background: rgb(0, 0, 0);
+  }
+}
+@keyframes cite-box-inner {
+  0%, 50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes cite-bracket-top {
+  0% {
+    top: 50%;
+    left: calc(50% - 12px);
+    right: calc(50% - 12px);
+    width: 24px;
+  }
+  50% {
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes cite-bracket-bottom {
+  0% {
+    bottom: 50%;
+    left: calc(50% - 12px);
+    right: calc(50% - 12px);
+    width: 24px;
+  }
+  50% {
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+.cite-box--close {
+  appearance: none;
+  --webkit-appearance: none;
+  background: #AF7FFD;
+  border: none;
+  color: white;
+  width: 128px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.index-content, .index-content p:first-child {
+  margin-top: 0;
+}
+
+.post-date.end-date::before {
+  content: "—";
+}
+
+/*# sourceMappingURL=main.css.map */

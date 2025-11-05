@@ -1,0 +1,27 @@
+{{- $duration_fmt := partial "duration" (dict "start" .start "end" .end "precision" "days") -}}
+{{- with .context.Params.dateFormat -}}
+    <time class="post-date">{{- $.start | time.Format . -}}</time>
+    {{- if $duration_fmt -}}
+        <time class="post-date end-date">{{- $.end | time.Format . -}}</time> 
+        ({{- $duration_fmt -}})
+    {{- end -}}
+{{- else with (index .context.Site.Params "dateFormat" .context.Type) -}}
+    <time class="post-date">{{- $.start | time.Format . -}}</time>
+    {{- if $duration_fmt -}}
+        <time class="post-date end-date">{{- $.end | time.Format . -}}</time> 
+        ({{- $duration_fmt -}})
+    {{- end -}}
+{{- else with .context.Site.Params.dateFormat.default -}}
+    <time class="post-date">{{- $.start | time.Format . -}}</time>
+    {{- if $duration_fmt -}}
+        <time class="post-date end-date">{{- $.end | time.Format . -}}</time>
+        ({{- $duration_fmt -}})
+    {{- end -}}
+{{- else -}}
+    <time class="post-date">{{- $.start | time.Format "2006-01-02"  -}}</time>
+    {{- if $duration_fmt -}}
+        <time class="post-date end-date">{{- $.end | time.Format . -}}</time>
+        ({{- $duration_fmt -}})
+    {{- end -}}
+{{- end -}}
+

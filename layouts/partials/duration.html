@@ -1,0 +1,31 @@
+{{- $start := time.AsTime .start -}}
+{{- $end := time.AsTime .end -}}
+{{- $duration := math.Div ($end.Sub $start).Milliseconds 1000 -}}
+{{- $duration_fmt := "" -}}
+{{- $increments_labels := slice "years" "months" "days" "hours" "minutes" "seconds" -}}
+{{- $increments := slice 31207680 2600640 86400 3600 60 1 -}}
+{{- $counts := slice -}}
+{{- $durations_fmt := slice -}}
+
+{{- range $i, $v := $increments -}}
+    {{- $label := index $increments_labels $i -}}
+
+    {{- if eq $label $.precision -}}
+        {{- break -}}
+    {{- end -}}
+
+    {{- $count := math.Div $duration $v -}}
+    {{- $counts = $counts | append $count -}}
+    {{- $duration = math.Sub $duration (math.Mul $count $v) -}}
+{{- end -}}
+
+{{- range $i, $v := $counts -}}
+    {{- $label := index $increments_labels $i -}}
+
+    {{- if gt $v 1 -}}
+        {{- $durations_fmt = $durations_fmt | append (printf "%d %s" $v $label) -}}
+    {{- else if gt $v 0 -}}
+        {{- $durations_fmt = $durations_fmt | append (printf "%d %s" $v (inflect.Singularize $label)) -}}
+    {{- end -}}
+{{- end -}}
+{{- return collections.Delimit $durations_fmt ", " -}}

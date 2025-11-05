@@ -15,13 +15,13 @@ pagination.pagerSize = 5
   contentTypeName = "posts"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  showMenuItems = 5
 
   # show selector to switch language
   showLanguageSelector = false
 
   # set theme to full screen width
-  fullWidthTheme = true
+  fullWidthTheme = false
 
   # center theme with default width
   centerTheme = false
@@ -63,6 +63,10 @@ pagination.pagerSize = 5
   # Example format, with date, time, and timezone abbreviation:
   # dateFormat = "2006-01-02 3:04:06 PM MST"
 
+[params.dateFormat]
+  default = "2006-01-02 3:04:06 PM MST"
+  projects = "January 2006"
+
 
 [params.twitter]
   # set Twitter handles for Twitter cards
@@ -78,6 +82,9 @@ pagination.pagerSize = 5
   section = ['html', 'rss', 'json']
   taxonomy = ['html', 'rss', 'json']
   term = ['html', 'rss', 'json']
+
+[taxonomies]
+  project = 'projects'
 
 [languages]
   [languages.en]
@@ -107,10 +114,22 @@ pagination.pagerSize = 5
         [[languages.en.menu.main]]
           identifier = "Work"
           name = "Work"
-          url = "/work"
+          url = "/projects"
           weight = 10
         [[languages.en.menu.main]]
           identifier = "Blog"
           name = "Blog"
           url = "/posts"
           weight = 20
+        [[languages.en.menu.main]]
+          identifier = "Hire Me"
+          name = "Hire Me"
+          url = "/hire-me"
+          weight = 30
+
+[markup.goldmark]
+    [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+    [markup.goldmark.renderer]
+        unsafe = true
