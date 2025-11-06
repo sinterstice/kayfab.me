@@ -1,0 +1,26 @@
+{
+  "name": "kayfab.me",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "^22"
+  },
+  "scripts": {
+    "build": "echo \"Required by Oryx\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinterstice/kayfab.me.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sinterstice/kayfab.me/issues"
+  },
+  "homepage": "https://github.com/sinterstice/kayfab.me#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.93.3"
+  }
+}
