@@ -1,5 +1,6 @@
 version: 1
 
 pre-build: npm ci
+post-build: ls public
 
 run: hugo build -e production --minify
