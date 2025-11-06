@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kayfab.me</title>
+    <title>kayfab.me on Kay is a writer, actor, activist, and engineer</title>
     <link>//localhost:1313/</link>
-    <description>Recent content on kayfab.me</description>
+    <description>Recent content in kayfab.me on Kay is a writer, actor, activist, and engineer</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0000</lastBuildDate>
@@ -21,6 +21,20 @@
       <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/projects/theater/untitled_carrier_bag_theory_of_fiction/</guid>
       <description>&lt;p&gt;An interpretive dance piece performed by Kay Coscia and Brin Ribble at Rochester’s Next King Fool.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Owl House</title>
+      <link>//localhost:1313/projects/food-service/owl-house/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/projects/food-service/owl-house/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Worked cold station preparing salads and deserts&lt;/li&gt;&#xA;&lt;li&gt;Plated, checked tickets&lt;/li&gt;&#xA;&lt;li&gt;Dish&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;(short engagement due to my limited availability at the time, but a valuable experience)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Food Not Bombs</title>
+      <link>//localhost:1313/projects/food-service/food-not-bombs/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/projects/food-service/food-not-bombs/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Working with donated produce to improvize and prepared healthy, vegan meals for 50-100 people weekly&lt;/li&gt;&#xA;&lt;li&gt;Flat top experience, allergen and food safety concerns&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Christianity, Conservatism, and Nihilism</title>
@@ -91,6 +105,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/about/</guid>
       <description>&lt;p&gt;This is the about page.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hire Me</title>
+      <link>//localhost:1313/hire-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/hire-me/</guid>
+      <description>&lt;p&gt;So you&amp;rsquo;d like to hire me for your next project! Excellent! But before you reach out, to make sure your project is a good fit, let me spell out what I offer.&lt;/p&gt;&#xA;&lt;p&gt;Things I can do for you:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Build a website&lt;/li&gt;&#xA;&lt;li&gt;Build a custom web app (including database and backend services)&lt;/li&gt;&#xA;&lt;li&gt;Build a custom native app&lt;/li&gt;&#xA;&lt;li&gt;Provide affordable hosting and maintenance services for the above&lt;/li&gt;&#xA;&lt;li&gt;Write copy, edit copy, import content, create and manage backups&lt;/li&gt;&#xA;&lt;li&gt;Consult on performance tuning and bug fixing for existing applications (see &lt;a href=&#34;//localhost:1313/projects/&#34;&gt;my work page&lt;/a&gt; for a list of languages I am proficient in)&lt;/li&gt;&#xA;&lt;li&gt;Manage my own hours, scope work, and provide estimates&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Things I &lt;em&gt;cannot&lt;/em&gt; do for you:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -3,12 +3,20 @@
   </div>
 </footer>
 
-{{ $menu := resources.Get "js/menu.js" | js.Build }}
-{{ $cp := resources.Get "js/code.js" | js.Build }}
-{{ $cite := resources.Get "js/citations.js" | js.Build }}
+{{$js_build_opts := dict
+  "minify" (not hugo.IsDevelopment)
+  "sourceMap" (cond hugo.IsDevelopment "inline" "")
+}}
 
-{{ $bundle := slice $menu $cp $cite | resources.Concat "bundle.js" | resources.Minify }}
+{{ $lib := resources.Match "js/lib/*.js" | resources.Concat "lib.js" | resources.Minify }}
+{{ $menu := resources.Get "js/menu.js" | js.Build $js_build_opts }}
+{{ $cp := resources.Get "js/code.js" | js.Build $js_build_opts }}
+{{ $cite := resources.Get "js/citations.js" | js.Build $js_build_opts }}
+{{ $collapsible := resources.Get "js/collapsible.js" | js.Build $js_build_opts }}
 
+{{ $bundle := slice $menu $cp $cite $collapsible | resources.Concat "bundle.js" }}
+
+<script type="text/javascript" src="{{ $lib.RelPermalink }}"></script>
 <script type="text/javascript" src="{{ $bundle.RelPermalink }}"></script>
 
 <!-- Extended footer section-->

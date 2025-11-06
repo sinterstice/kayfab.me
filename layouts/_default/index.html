@@ -13,7 +13,7 @@
     {{ if .IsHome }}
       {{ $PageContext = .Site }}
     {{ end }}
-    {{ $posts := where ($PageContext.RegularPages.ByPublishDate.Reverse.Limit 5) "Type" $contentTypeName }}
+    {{ $posts := where ($PageContext.RegularPages.ByPublishDate.Reverse) "Type" $contentTypeName | first 3 }}
 
     {{ range $posts }}
       <article class="post on-list">

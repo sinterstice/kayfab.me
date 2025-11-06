@@ -16,56 +16,57 @@
   </div>
   <div class="posts">
     {{ range where $.Site.RegularPages.ByDate.Reverse "Type" "projects" }}
-      {{ $projects := .GetTerms "projects" }}
-<article class="post on-list" data-term-projects="{{- range $projects -}}{{- lower .Page.Title -}}{{- end -}}">
-        <h2 class="post-title">
-            {{ $title := .Title | markdownify }}
-            {{- with .Params.link -}}
-                <a href="{{ . }}">{{ $title }}</a>
-            {{- else -}}
-                {{ $title }}
+      {{ $term := index (.GetTerms "projects") 0 }}
+      {{- $project_type := $term.Page.Title -}}
+      <article class="post on-list" data-term-projects="{{- lower $project_type -}}">
+          <h2 class="post-title">
+              {{ $title := .Title | markdownify }}
+              {{- with .Params.link -}}
+                  <a href="{{ . }}">{{ $title }}</a>
+              {{- else -}}
+                  {{ $title }}
+              {{- end -}}
+          </h2>
+          <div class="post-meta">
+            <span class="post-category">{{ $project_type }}</span>
+            {{- with .Params.role -}}
+              <span class="post-role">{{ . }}</span>
             {{- end -}}
-        </h2>
-        <div class="post-meta">
-          {{- with .Params.role -}}
-            <span class="post-role">{{ . }}</span>
-          {{- end -}}
-          {{- if .Params.endDate -}}
-              {{- partial "date-range" (dict "context" . "start" .Date "end" .Params.endDate) -}}
-          {{- else if .Date -}}
-            <time class="post-date">
-              {{- partial "post-date" . -}}
-            </time>
-          {{- end -}}
-          {{- with .Params.Author -}}
-            <span class="post-author">{{- . -}}</span>
-          {{- end -}}
-        </div>
+            {{- if or .Params.endDate .Params.noEndDate -}}
+                {{- partial "date-range" (dict "context" . "start" .Date "end" .Params.endDate "noEndDate" .Params.noEndDate) -}}
+            {{- else if .Date -}}
+              <time class="post-date">
+                {{- partial "post-date" . -}}
+              </time>
+            {{- end -}}
+            {{- with .Params.Author -}}
+              <span class="post-author">{{- . -}}</span>
+            {{- end -}}
+          </div>
 
-        {{ if .Params.tags }}
-          <span class="post-tags">
-            {{ range .Params.tags }}
-            #<a href="{{ (urlize (printf "tags/%s/" . )) | absLangURL }}">
-              {{- . -}}
-            </a>&nbsp;
-            {{ end }}
-          </span>
-        {{ end }}
-
-        {{ partial "cover.html" . }}
-
-        <div class="post-content">
-          {{ if .Params.showFullContent }}
-            {{ .Content }}
-          {{ else if .Description }}
-            <p>{{ .Description | markdownify }}</p>
-          {{ else }}
-            {{ .Summary }}
+          {{ if .Params.tags }}
+            <span class="post-tags">
+              {{ range .Params.tags }}
+              #<a href="{{ (urlize (printf "tags/%s/" . )) | absLangURL }}">
+                {{- . -}}
+              </a>&nbsp;
+              {{ end }}
+            </span>
           {{ end }}
-        </div>
-      </article>
-    {{ end }}
 
+          {{ partial "cover.html" . }}
+
+          <div class="post-content">
+            {{ if .Params.showFullContent }}
+              {{ .Content }}
+            {{ else if .Description }}
+              <p>{{ .Description | markdownify }}</p>
+            {{ else }}
+              {{ .Summary }}
+            {{ end }}
+          </div>
+        </article>
+    {{ end }}
     {{ partial "pagination.html" . }}
   </div>
 {{ end }}

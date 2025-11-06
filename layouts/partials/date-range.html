@@ -3,25 +3,27 @@
     <time class="post-date">{{- $.start | time.Format . -}}</time>
     {{- if $duration_fmt -}}
         <time class="post-date end-date">{{- $.end | time.Format . -}}</time> 
-        ({{- $duration_fmt -}})
+        <span class="duration">({{- $duration_fmt -}})</span>
     {{- end -}}
 {{- else with (index .context.Site.Params "dateFormat" .context.Type) -}}
     <time class="post-date">{{- $.start | time.Format . -}}</time>
     {{- if $duration_fmt -}}
         <time class="post-date end-date">{{- $.end | time.Format . -}}</time> 
-        ({{- $duration_fmt -}})
+        <span class="duration">({{- $duration_fmt -}})</span>
     {{- end -}}
 {{- else with .context.Site.Params.dateFormat.default -}}
     <time class="post-date">{{- $.start | time.Format . -}}</time>
     {{- if $duration_fmt -}}
         <time class="post-date end-date">{{- $.end | time.Format . -}}</time>
-        ({{- $duration_fmt -}})
+        <span class="duration">({{- $duration_fmt -}})</span>
     {{- end -}}
 {{- else -}}
     <time class="post-date">{{- $.start | time.Format "2006-01-02"  -}}</time>
     {{- if $duration_fmt -}}
         <time class="post-date end-date">{{- $.end | time.Format . -}}</time>
-        ({{- $duration_fmt -}})
+        <span class="duration">({{- $duration_fmt -}})</span>
     {{- end -}}
 {{- end -}}
-
+{{- if .noEndDate -}}
+<span class="post-date end-date">Present</span>
+{{- end -}}

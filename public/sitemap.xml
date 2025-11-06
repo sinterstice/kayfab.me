@@ -17,6 +17,15 @@
     <loc>//localhost:1313/projects/theater/untitled_carrier_bag_theory_of_fiction/</loc>
     <lastmod>2024-09-30T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/projects/food-service/</loc>
+    <lastmod>2024-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/projects/food-service/owl-house/</loc>
+    <lastmod>2024-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/projects/food-service/food-not-bombs/</loc>
+    <lastmod>2023-03-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/posts/christianity-conservatism-nihilism/</loc>
     <lastmod>2022-12-31T12:06:35-05:00</lastmod>
   </url><url>
@@ -51,5 +60,7 @@
     <lastmod>2015-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/about/</loc>
+  </url><url>
+    <loc>//localhost:1313/hire-me/</loc>
   </url>
 </urlset>

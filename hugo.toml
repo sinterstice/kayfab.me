@@ -64,7 +64,7 @@ pagination.pagerSize = 5
   # dateFormat = "2006-01-02 3:04:06 PM MST"
 
 [params.dateFormat]
-  default = "2006-01-02 3:04:06 PM MST"
+  default = "2006-01-02"
   projects = "January 2006"
 
 
@@ -89,10 +89,10 @@ pagination.pagerSize = 5
 [languages]
   [languages.en]
     languageName = "English"
-    title = "kayfab.me"
+    title = "Kay is a writer, actor, activist, and engineer"
 
     [languages.en.params]
-      subtitle = "Writer, actor, activist, engineer"
+      subtitle = ""
       owner = ""
       keywords = ""
       copyright = ""

@@ -30,8 +30,8 @@
           {{- with .Params.role -}}
             <span class="post-role">{{ . }}</span>
           {{- end -}}
-          {{- if .Params.endDate -}}
-              {{- partial "date-range" (dict "context" . "start" .Date "end" .Params.endDate) -}}
+          {{- if or .Params.endDate .Params.noEndDate -}}
+              {{- partial "date-range" (dict "context" . "start" .Date "end" .Params.endDate "noEndDate" .Params.noEndDate) -}}
           {{- else if .Date -}}
             <time class="post-date">
               {{- partial "post-date" . -}}
