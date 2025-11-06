@@ -17,7 +17,7 @@
 {{ $sass := resources.Get "sass/main.scss" | toCSS (dict
     "enableSourceMap" hugo.IsDevelopment
     "outputStyle" (cond hugo.IsDevelopment "expanded" "compressed")
-    "transpiler" "dartsass"
+    "transpiler" (cond hugo.IsDevelopment "dartsass" "libsass")
 ) }}
 {{ $css := $terminal_css | append $sass | resources.Concat "style.css" | resources.Minify }}
 <link rel="stylesheet" href="{{ $css.Permalink }}">

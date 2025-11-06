@@ -20,8 +20,12 @@ jobs:
           submodules: true
           lfs: false
 
-      - name: Install Dart Sass Embedded # Installs dart-sass
-        run: sudo snap install dart-sass-embedded
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+
+      - name: Install sass
+        run: npm i sass
 
       - name: Build And Deploy
         id: builddeploy
