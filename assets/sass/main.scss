@@ -46,10 +46,12 @@
     }
 
     &:first-of-type {
-        &:not(.from-open) {
-            .collapsible-inner {
-                animation: bounce-tease 1s 0.5s ease-in-out;
-            }
+        .collapsible-inner {
+            animation: bounce-tease 1s 0.5s ease-in-out;
+        }
+
+        &.from-open .collapsible-inner {
+            animation: none;
         }
     }
 
