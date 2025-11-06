@@ -45,9 +45,11 @@
         padding: 0 0.8rem;
     }
 
-    &:not(.from-open) {
-        .collapsible-inner {
-            animation: bounce-tease 1s ease-in;
+    &:first-of-type {
+        &:not(.from-open) {
+            .collapsible-inner {
+                animation: bounce-tease 1s ease-in;
+            }
         }
     }
 
