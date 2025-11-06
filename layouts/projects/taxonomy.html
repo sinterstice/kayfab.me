@@ -5,11 +5,11 @@
     </div>
   {{ end }}
   <div class="posts-filters" data-filter-term="projects">
-    <button class="posts-filter" data-term-projects="all">
+    <button class="posts-filter active" data-term-projects="all">
       <a href="{{ $.Page.Permalink}}">All</a>
     </button>
     {{ range $term, $tax := .Data.Terms }}
-      <button class="posts-filter" data-term-projects="{{ lower $tax.Page.Title }}">
+      <button class="posts-filter project-type-{{ $tax.Page.Slug }}" data-term-projects="{{ $tax.Page.Slug }}">
         <a href="{{ $tax.Page.Permalink }}">{{ $tax.Page.Title }}</a>
       </button>
     {{ end }}
@@ -17,8 +17,8 @@
   <div class="posts">
     {{ range where $.Site.RegularPages.ByDate.Reverse "Type" "projects" }}
       {{ $term := index (.GetTerms "projects") 0 }}
-      {{- $project_type := $term.Page.Title -}}
-      <article class="post on-list" data-term-projects="{{- lower $project_type -}}">
+      {{- $project_type := $term.Page.Slug -}}
+      <article class="post on-list project-type-{{- $project_type -}}">
           <h2 class="post-title">
               {{ $title := .Title | markdownify }}
               {{- with .Params.link -}}
@@ -28,7 +28,7 @@
               {{- end -}}
           </h2>
           <div class="post-meta">
-            <span class="post-category">{{ $project_type }}</span>
+            <span class="post-category">{{ $term.Page.Title }}</span>
             {{- with .Params.role -}}
               <span class="post-role">{{ . }}</span>
             {{- end -}}

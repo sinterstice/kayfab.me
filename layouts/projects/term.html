@@ -9,15 +9,16 @@
       <a href="{{ .Site.Taxonomies.projects.Page.Permalink}}">All</a>
     </button>
     {{ range $term, $tax := .Site.Taxonomies.projects }}
-      <button class="posts-filter {{ cond (eq $term (lower $.Page.LinkTitle)) "active" "" }}">
+      <button class="posts-filter {{ cond (eq $term $.Page.Slug) "active" "" }} project-type-{{ $tax.Page.Slug }}">
         <a href="{{ $tax.Page.Permalink }}">{{ $tax.Page.Title }}</a>
       </button>
     {{ end }}
   </div>
   <div class="posts">
     {{ range  .Pages }}
-      {{ $projects := .GetTerms "projects" }}
-<article class="post on-list" data-term-projects="{{- range $projects -}}{{- lower .Page.Title -}}{{- end -}}">
+      {{ $term := index (.GetTerms "projects") 0 }}
+      {{ $project_type := $term.Page.Slug }}
+      <article class="post on-list project-type-{{- $project_type -}}" data-term-projects="{{ $project_type }}">
         <h2 class="post-title">
             {{ $title := .Title | markdownify }}
             {{- with .Params.link -}}

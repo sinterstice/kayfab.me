@@ -94,3 +94,26 @@
         height: 1em;
     }
 }
+
+
+/***************** Projects page ******************/
+.posts-filter.active {
+    a {
+        color: var(--background);
+    }
+
+    background: var(--accent);
+    border: var(--background);
+}
+
+.project-type-software {
+    --accent: #e5a50a;
+}
+
+.project-type-volunteering {
+    --accent: #33d17a;
+}
+
+.project-type-food-service {
+    --accent: #ff7800;
+}

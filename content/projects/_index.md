@@ -4,8 +4,8 @@ title = 'Projects'
 
 ## Skills
 
-<div class="collapsible">
-<h3><a href="#">Software</a></h3>
+<div class="project-type-software collapsible">
+<h3 class=""><a href="#">Software</a></h3>
 
 <div class="collapsible-inner">
 
@@ -41,32 +41,32 @@ title = 'Projects'
 </div>
 </div>
 
-<div class="collapsible">
-<h3><a href="#">Theater</a></h3>
+<div class="project-type-theater collapsible">
+<h3 class=""><a href="#">Theater</a></h3>
 
 <div class="collapsible-inner">
 
 - Writer ([contact me](/hire-me) for script samples)
 - Director
-- Actor with diverse range (singing, dance, athletic)
+- Actor with diverse range (singing, dance, athletic, improv)
 
 </div>
 </div>
 
-<div class="collapsible">
-<h3><a href="#">Management/Nonprofit Work</a></h3>
+<div class="project-type-volunteering collapsible">
+<h3 class=""><a href="#">Management/Nonprofit Work</a></h3>
 
 <div class="collapsible-inner">
 
-- I have been the primary manager for employees and interns, setting goals and job expectations, conducting 1:1s, and managing projects
-- I have 2 years of experience on nonprofit boards, and am adept at conducting meetings, diffusing conflict, and mediating between different values and priorities
-- I have designed and conducted hiring processes both in a SE and nonprofit context
+- Primary manager for employees and interns, setting goals and job expectations, conducting 1:1s, and managing projects
+- 2 years of experience on nonprofit boards, and am adept at conducting meetings, diffusing conflict, and mediating between different values and priorities
+- Designed and conducted hiring processes both in a SE and nonprofit context
 
 </div>
 </div>
 
-<div class="collapsible">
-<h3><a href="#">Food Service</a></h3>
+<div class="project-type-food-service collapsible">
+<h3 class=""><a href="#">Food Service</a></h3>
 
 <div class="collapsible-inner">
 

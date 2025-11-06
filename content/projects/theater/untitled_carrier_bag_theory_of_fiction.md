@@ -6,4 +6,4 @@ projects = ['theater']
     role = 'Choreographer, Dancer'
 +++
 
-An interpretive dance piece performed by Kay Coscia and Brin Ribble at Rochester’s Next King Fool.
+An interpretive dance piece concieved and performed by Kay Coscia and Brin Ribble at Rochester’s Next King Fool.
