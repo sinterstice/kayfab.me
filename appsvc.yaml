@@ -1,0 +1,5 @@
+version: 1
+
+pre-build: npm ci
+
+run: hugo build -e production --minify
