@@ -115,3 +115,23 @@
 .project-type-food-service {
     --accent: #ff7800;
 }
+
+/*************** Slides ******************************/
+
+.slide-controls {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1.5rem;
+    z-index: 999999;
+}
+
+.slide-header {
+    text-align: center;
+    font-size: 3.2em;
+    padding-top: 1.8em;
+
+    &:first-of-type {
+        padding-top: 4em;
+    }
+}

@@ -3,3 +3,9 @@
   --foreground: #f7e9f9;
   --accent: #e575f8;
 }
+
+.white-rabbit-club {
+  --background: #131313;
+  --foreground: #baff28;
+  --accent: #f8e45c;
+}

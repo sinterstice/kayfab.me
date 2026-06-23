@@ -124,7 +124,7 @@ pagination.pagerSize = 5
         [[languages.en.menu.main]]
           identifier = "Hire Me"
           name = "Hire Me"
-          url = "/hire-me"
+          url = "/hire_me"
           weight = 30
 
 [markup.goldmark]
