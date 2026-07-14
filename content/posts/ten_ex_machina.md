@@ -1,7 +1,7 @@
 +++
 title = "Ten Ex Machina: Artificial Intelligence And Constant Capital, Part 1"
-date = "2026-06-23T12:27:53-04:00"
-description = "AI and constant capital"
+date = "2026-07-14T12:27:53-04:00"
+description = "on losing faith and falling behind"
 showFullContent = false
 readingTime = false
 hideComments = false
@@ -9,9 +9,9 @@ hideComments = false
 
 I remember the exact moment I became disillusioned with the tech industry.
 
-I was sitting in a meeting with our design team. It must have been sometime around the fall of 2019. After working at the company for over a year, we were finally conducting focus group testing on the users of our app. I felt strongly (and still do) that directly observing users' real world behavior was essential to good design; and as a developer, I often felt removed from the people who used the software I wrote by an opaque bureaucracy, not knowing if that bureaucracy even bothered to ask its users what they wanted. I asked my boss if I could be in the room, but had to settle for hearing about it second-hand; still, I was thrilled that we had actually spent the time and money on what every company said was most important.
+I was sitting in a meeting with our design team. It must have been sometime around the fall of 2019. After working at the company for over a year, we were finally doing focus group testing. I felt strongly (and still do) that observing users' real world behavior was essential to good design; and as a developer, I often felt removed from the people who used the software I wrote by an opaque bureaucracy, not knowing if that bureaucracy even bothered to ask its users what they wanted. I had to settle for hearing our user's thoughts second-hand; still, I was thrilled that we had actually spent the time and money on what every company said was most important.
 
-As far as tech companies go, they were hardly evil: they didn't make weapons; they didn't make software to figure out who to point the weapons at; they didn't even provide logistical support to the people who point the weapons. Not saving the world, but not setting it on fire either. They were, as they put it, in the business of "Customer Experience Management". Their core product was a SaaS application which ingested all the different surveys customers fill out, from comment cards in hotel rooms, to google reviews, to the link at the bottom of your email receipt (I'm told we sent emails to literally a billion people; if you searched their name in your email, you'd probably get a few hits). They then did a bunch of natural lanuage analysis and statistical transformations to figure out the right action to take to "close the loop" with that customer. If they were happy, "closing the loop" might involve sending them a short email thanking them for their business. If they were unhappy, it might mean leaving an apologetic reply on a google review. If they were *very* unhappy (and a big enough spender), it might mean the manager of the hotel personally calling them to grovel and offer some free perks. 
+As far as tech companies go, they were hardly evil: they didn't make weapons; they didn't make software to figure out who to point the weapons at; they didn't even provide logistical support to the people who point the weapons. Not saving the world, but not setting it on fire either. They were, as they put it, in the business of "Customer Experience Management". Their core product was a SaaS application which ingested all the different surveys customers fill out, from comment cards in hotel rooms, to google reviews, to the link at the bottom of your email receipt (I was told they sent emails to literally a billion people; you probably have one sitting in your inbox right now). They then did a bunch of natural lanuage analysis and statistical transformations to figure out the right action to take to "close the loop" with that customer. If they were happy, "closing the loop" might involve sending them a short email thanking them for their business. If they were unhappy, it might mean leaving an apologetic reply on a google review. If they were *very* unhappy (and a big enough spender), it might mean the manager of the hotel personally calling them to grovel and offer some free perks. 
 
 Like all enterprise software products, it had its quirks and deficiencies, but mostly it worked, and worked well for an industry with very tight margins, one that needs to cut costs anywhere it can without making the experience feel cheap: hospitality. At the time, the company had the bulk of the largest hotel chains for its customers, and it kept them year after year because the product improved customer loyalty in a directly measurable way. 
 
@@ -31,13 +31,13 @@ All I could think was: *when will they figure out how to do this to me?*
 
 # Software Engineer as a Service
 
-I would work other tech jobs, but my heart wasn't in it anymore. When tech work shifted remote in 2020, I took advantage of the flexibity and the massively overinflated pay to do some soul searching. I quit my job and wandered around, getting involved in online debates and offline struggles, trying to answer the question: why me? Am I really so smart, is my labor really so valuable as to deserve making twice the median income in the richest country in the world (and many times that when you factor in stock options)? Why did I get out of the post-industiral rural poverty death spiral, while the people I grew up with struggled?
+I would work other tech jobs, but my heart wasn't in it anymore. When tech work shifted remote in 2020, I took advantage of the flexibity and the massively overinflated pay to do some soul searching. I wandered around, getting involved in online debates and offline struggles, trying to answer the question: why me? Am I really so smart, is my labor really so valuable as to deserve making twice the median income in the richest country in the world (and many times that when you factor in stock awards)? Why did I make it out of the post-industiral rural poverty death spiral?
 
 Fast forward to 2026. I have fully left the tech industry; I work in a soup kitchen. My exit from the industry, which once felt like a principled choice, is starting to feel like I simply fell behind. AI has transformed the industry, and continues to do so at an unbelievable pace. My leftist friends are largely dismissive toward and ignorant of everything AI, seeing it as a last ditch effort to prop up a dying social order; while my tech friends have either transformed their entire way of doing their job, or are holding down their place in what they believe to be a temporary eddy in the coming tide of agentic chaos. 
 
 I think that the reality is more complicated than either. But one thing seems clear to me: whatever happened between 2015 and 2020 that allowed me to go from being a homeschooled, ex-religious shut-in with no social skills or will to live, to a Marxist anarchist who just so happens to own a house and a car, is over. I can still program, a fact I have to remind myself of from time to time with the occasional all-night coding binge; but I am no longer willing or able to work in the way that is required to keep up with the direction the industry is heading.
 
-At the end of this post, I will provide some resources I have found helpful for understanding the present state of AI; resources which are neither purely hype nor purely dismissive. For now, I'd like to use a concept from Marx's Capital to articulate what I believe is currently happening to the software industry. Such a dramatic reduction in the value of the labor power of a class of workers, value which they formerly enjoyed almost exclusively out of the mass of workers, demands explanation. According to the logic of the stock market, all is explained by the creation of a massive pile of new wealth in the form of AI. However, I argue it is possible both for this valuation to be grossly inflated, and for AI to have brought about a real and permanent change in the value of software engineers' labor. 
+At the end of this post, I will provide some resources I have found helpful for understanding the present state of AI; resources which are neither purely hype nor purely dismissive. For now, I'd like to use a concept from Marx's Capital to articulate what I believe is currently happening to the software industry. Such a dramatic reduction in the value of the labor power of a class of workers, value which they formerly enjoyed almost exclusively out of the mass of workers, demands explanation. According to the logic of the stock market, all is explained by the creation of a massive pile of new wealth in the form of AI. However, I argue it is possible both for this valuation to be grossly inflated, and for AI to have brought about a real and permanent change in the economic situation. 
 
 # Machine Slop
 
@@ -77,7 +77,7 @@ The inevitable (and unintended) side effect of each Capitalist's incentive to ma
 
 Over the course of industrial society's development, we have witnessed the slow concretization of human skill and knowledge into a system of objects, systems which increasingly interface not with us but with each other. The science fiction of the 20th century imagined that the objects would handle all the boring and dangerous work, reserving for us the part of *intelligence*: every citizen an educated, confident, lesuirely conductor of the orchestra of industry. While our collective disregard for the value of human life allows it to remain cheaper to consume human bodies in dangerous work than it is to automate it, the capitalists have seemingly found a way to automate the parts of the process that were supposed to be the preserve of the educated classes in the imperial core. AI in its current form seems best positioned to replace "bullshit" office jobs, leaving the educated classes to slip further down the ladder of so-called "skilled" labor.
 
-While we can perhaps feel giddy and a bit nervous that our machines might start humming along without us, this all might not seem so bad if every step towards concretization didn't push the working classes even further from the levers of the global economy. Perhaps when *everyone* has been de-skilled and proletarianized except the direct owners of the last few capitals on earth and their families, the masses of the imperial core will at last realize their impossible situation and seize what remains.
+So this is what AI firms offer: the (mostly theoretical at this point, but increasingly real) ability to replace the army of managers, programmers, technical writers, and designers, along with the entire world of office work with a *much smaller* army of those same workers, babysitting AIs. The unpredictability and opacity of the bureaucratic labyrinth replaced with a tap labeled *intelligence*, which can be opened or shut at will. How *well* this will work remains to be seen; but it has already dramatically eroded the bargaining power of at least one segment of the working classes who enjoyed, for a time, a relatively cushy, though insecure, position in the class hierarchy<sup><a class="cite" href="#cite-engineer-unemployment">cite</a></sup>. The day I was sure would arrive sooner or later seems to have arrived sooner.
 
 # The View From Alongside The Torrent
 
@@ -91,17 +91,19 @@ I find myself in a dramatically different world than the one I grew up in. A dec
 
 Sure, in this venture capital subsidized moment, I can have a Claude Code subscription for ~$100/month. But that can't be anywhere *near* the stable market price for these frontier models, and already I know people who spend a significant fraction of their salary at work on AI compute hours. Even at current prices, 14-year-old me could not have afforded a Claude Code subscription. Nor can I imagine I would have become very good at coding if I had; I would have simply become dependent on Claude to make computers do anything interesting, the same way my brain is dependent on Google to remember basic information now, only moreso.
 
-From where I'm sitting right now, it seems like the beginning of the end of the special little segment of the working classes who, for a brief flash of historical time, were imbued with astounding economic mobility. But a lot remains to be seen; things continue to change quickly. It might be that AI is so expensive and energy intensive that our wiggly old meat sacks are actually more efficient. It might be that the market will collapse as it did in the DotCom bubble, only to come back in a form more aligned with economic reality, and no less devastating to our brains and our bargaining power for all that.
+From where I'm sitting right now, it seems like the beginning of the end of the special little segment of the working classes who, for a brief flash of historical time, were imbued with a lot of economic mobility. But a lot remains to be seen; things continue to change quickly. It might be that AI is so expensive and energy intensive that our wiggly old meat sacks are more efficient in the long run. It might be that the market will collapse as it did in the DotCom bubble, only to come back in a form more aligned with economic reality, and no less devastating to our brains and our bargaining power for all that.
 
-But for myself, I doubt programming will ever be more than a hobby for me again. I resisted the push toward management over my entire 10-year career. Why would I want to go back to the industry now, when the job seems to consist of managing a team of resource-guzzling, corpo speech regurgitating interns?
+But for myself, I doubt programming will ever be more than a hobby for me again. I resisted the push toward management over my entire 10-year career. Why would I want to go back to the industry now, when the job seems to consist of managing a team of resource-guzzling, corpo-speech-regurgitating interns?
 
 # Next Time
 
-Since this post is getting long, in Part 2 I will get into more detail about why I think leftists have misunderstood the threat posed by AI, both taking it too seriously and not seriously enough. For now, I'll provide some links to resources I think clarify the stakes of the trend toward generative AI:
+Since this post is getting long, in part 2 I will get into more detail about why I think leftists have misunderstood the threat posed by AI, both taking it too seriously and not seriously enough. For now, I'll provide some links to resources I think clarify the stakes of the trend toward generative AI:
 
-- [Lesser Gods: Labor in the AI Labyrinth, Phil A. Neel](https://philneel.substack.com/p/lesser-gods-labor-in-the-ai-labyrinth) (Paywalled, but completely worth it. He's working on a book-length treatment. This is the main source of my critique of the left's misunderstanding of AI)
-- [Wading through AI, Casey Muratori, Demetri Spanos](https://youtu.be/RJyPVLMyyuA?si=eRilbdrZiN7IsfUb) (A programmer who refuses to use AI interviews a programmer who has worked in the field since before the current bubble about the difference between the current hype cycle and the actual technology, as well as the ethical and legal issues and more.)
-- [Animal Linguistics: Origins and Evolution of Language, Michele Fournet](https://vimeo.com/871803593) (An example of a narrowly constrained problem using neural networks to do something really cool and novel, understanding whale song!!)
+# Further Reading
+
+- [Read] [Lesser Gods: Labor in the AI Labyrinth, Phil A. Neel](https://philneel.substack.com/p/lesser-gods-labor-in-the-ai-labyrinth) Paywalled, but completely worth it. He's working on a book-length treatment. This is the main source of my critique of the left's misunderstanding of AI
+- [Watch] [Wading through AI, Casey Muratori, Demetri Spanos](https://youtu.be/RJyPVLMyyuA?si=eRilbdrZiN7IsfUb) A programmer who refuses to use AI interviews a programmer who has worked in the field since before the current bubble about the difference between the current hype cycle and the actual technology, the ethical issues with it, and more.
+- [Watch] [Animal Linguistics: Origins and Evolution of Language, Michele Fournet](https://vimeo.com/871803593) An example of a narrowly constrained problem using neural networks to do something really cool and novel, understanding whale song!!
 
 # Footnotes
 
@@ -122,6 +124,12 @@ This also explains why service work has grown to absorb the excess educated labo
 <li id="cite-marx-activity"> 
 
 Marx makes a distinction between *activity*, which is work we chose to do because we are able to bring our entire being, including our autonomy, to; and *labor*, which is either boring or dangerous or both, and which we only do when we are forced to in order to survive.
+
+</li>
+
+<li id="cite-engineer-unemployment"> 
+
+[Currently, Computer Engineering has one of the highest post-graduate unemployment levels of any degree, at 7.8%.](https://www.investopedia.com/these-37-college-majors-reveal-unemployment-rates-higher-than-all-other-workers-11941188)
 
 </li>
 
